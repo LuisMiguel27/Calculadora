@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.display{
+
+    background-color: #ffffff;
+    width: 100%;
+    height: 10%;
+
+
+}
+.container_calc{
+   
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+.calculadora {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.butoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    width: 100%;  
+    height: 80%;  
+}
+
+.numeros, .operadores, .virgula{
+    
+    width: 100%; 
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.calculadora  button{
+
+    width: 50px;
+    height: 50px;
+    
+
+}
