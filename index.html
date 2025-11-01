@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 
 </head>
 
@@ -16,34 +17,54 @@
 
     <div class ="container_calc">
         <div class="display">
-            <div class="passado"> </div>
-            <div class="resultado"></div>
+            <div class="passado">
+                <h3 id="passado">1-1</h3>
+            </div>
+            <div class="resultado">
+                <h1 id="display">0</h1>
+            </div>
 
-
+            <div class= "operacao">
+                <h3 id="operacao">+</h3>
+            </div>
         </div>
         
         <div class = "calculadora">
             <div class ="butoes">
-                <button type = "button" class = "numeros" id = "0">0</button>
-                <button type = "button" class = "numeros" id = "1">1</button>
-                <button type = "button" class = "numeros" id = "2">2</button>
-                <button type = "button" class = "numeros" id = "3">3</button>
-                <button type = "button" class = "numeros" id = "4">4</button>
-                <button type = "button" class = "numeros" id = "5">5</button>
-                <button type = "button" class = "numeros" id = "6">6</button>
-                <button type = "button" class = "numeros" id = "7">7</button>
-                <button type = "button" class = "numeros" id = "8">8</button>
-                <button type = "button" class = "numeros" id = "9">9</button>
-                
-                <button type = "button" class = "operadores" id = "soma">+</button>
-                <button type = "button" class = "operadores" id = "sub">-</button>
-                <button type = "button" class = "operadores" id = "mult">x</button>
-                <button type = "button" class = "operadores" id = "div">/</button>
-                <button type = "button" class = "operadores" id = "igual">=</button>
-                <button type = "button" class = "operadores" id = "clear">C</button>
-                <button tyoe ="button"  class=  "operadores" id= "procento">%</button>
-                <button type = "button" class = "virgula" id = "virg">,</button>
+                <section class="part_num">
+                    
+                    <button class="numeros" id="limpartudo">CE</button>
+                    <button type = "button" class = "numeros" id = "clear">C</button>
+                    <button tyoe ="button"  class=  "numeros" id= "procento">%</button>
+                    
+                   
+                    <button class="numeros" id="9">9</button>
+                    <button class="numeros" id="8">8</button>
+                    <button class="numeros" id="7">7</button>
+                   
+                    <button class="numeros" id="6">6</button>
+                    <button class="numeros" id="5">5</button>
+                    <button class="numeros" id="4">4</button>
+                   
+                    <button class="numeros" id="3">3</button>
+                    <button class="numeros" id="2">2</button>
+                    <button class="numeros" id="1">1</button>
+                  
+                   
+                    <button class="numeros" id="vazio"></button>
+                    <button class="numeros" id="0">0</button>
+                    <button type = "button" class = "numeros" id = "virg">,</button>
 
+                </section>
+
+                <section class="part_oper">
+                        <button type = "button" class = "operadores" id = "soma">+</button>
+                        <button type = "button" class = "operadores" id = "sub">-</button>
+                        <button type = "button" class = "operadores" id = "mult">x</button>
+                        <button type = "button" class = "operadores" id = "div">/</button>
+                        <button type = "button" class = "operadores" id = "igual">=</button>
+            
+                </section>
             </div>
         </div>
     </div>
